@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jaxdf"
-version = "0.2.8"
+version = "0.2.9"
 description = "A JAX-based research framework for writing differentiable numerical simulators with arbitrary discretizations"
 authors = [
   "Antonio Stanziola <a.stanziola@ucl.ac.uk>",
@@ -52,7 +52,7 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.9"
 plum-dispatch = "^2.5.2"
-jax = "^0.4.20"
+jax = "^0.7.2"
 equinox = "^0.11.2"
 
 [tool.poetry.group.dev.dependencies]
