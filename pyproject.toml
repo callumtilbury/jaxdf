@@ -52,8 +52,12 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.9"
 plum-dispatch = "^2.5.2"
-jax = "^0.8.0"
+jax = {version = "^0.8.0", extras = ["tpu"], optional = true}
+jax-cpu = {version = "^0.8.0", optional = false}
 equinox = "^0.11.2"
+
+[tool.poetry.extras]
+tpu = ["jax"]
 
 [tool.poetry.group.dev.dependencies]
 coverage = "^7.3.2"
